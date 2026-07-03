@@ -68,28 +68,6 @@ streamlit run app.py
 
 ---
 
-## Features
-
-- Offline AI-powered diagnostics
-- Heavy machinery troubleshooting
-- Equipment manual analysis
-- Sensor log analysis
-- Natural language interaction
-- Automatic maintenance report generation
-- No internet dependency
-
----
-
-## Future Enhancements
-
-- Voice-based interaction
-- Camera-based error code scanning
-- PDF equipment manual support
-- Real-time IoT sensor integration
-- Predictive maintenance using AI
-- Multi-language support
-
----
 
 ## Team
 
