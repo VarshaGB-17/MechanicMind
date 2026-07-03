@@ -93,8 +93,8 @@ streamlit run app.py
 
 ## Team
 
-**Varsha Bhooti**
-**Sushmitha D S**
+- Varsha Bhooti
+- Sushmitha D S
 
 
 Information Science and Engineering
