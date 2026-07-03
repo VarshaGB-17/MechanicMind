@@ -1,32 +1,108 @@
-MechanicMind — Offline AI Diagnostic Copilot
-The Problem
-Heavy machinery — excavators, mining rigs, construction equipment — often operates in remote sites with unreliable or zero internet connectivity. When a fault occurs, technicians typically rely on paper manuals, phone calls to head office, or cloud-based diagnostic tools that simply don't work offline. This causes delays in repair, increased downtime, and safety risks.
+# MechanicMind — Offline AI Diagnostic Copilot for Heavy Machinery
 
-The Solution
-MechanicMind is a fully offline, edge-deployed AI diagnostic assistant. A technician can ask natural-language questions about a machine fault, and the system reasons through the equipment manual and live sensor data — entirely on-device, with zero cloud or internet dependency.
+## The Problem
 
-How It Works
-Local AI model — runs entirely on the device via Ollama (Phi-3-mini), no API calls, no internet required
-Local knowledge base — equipment manual excerpts and known fault codes stored as plain text
-Local sensor log — simulated machine telemetry (pressure, temperature, vibration)
-Reasoning — the AI cross-references the technician's question against both the manual and recent sensor readings to produce a diagnosis
-Auto-logging — every diagnosis is saved locally as a maintenance report
-Proof of Offline Operation
-Tested with wifi fully disabled — the system still generates accurate, sensor-grounded diagnoses in real time.
+Heavy machinery—such as excavators, mining rigs, and construction equipment—often operates in remote sites with unreliable or no internet connectivity. When a fault occurs, technicians typically rely on paper manuals, phone calls to experts, or cloud-based diagnostic tools that don't work offline. This leads to increased downtime, delayed repairs, and potential safety risks.
 
-Tech Stack
-Ollama (Phi-3-mini) — local LLM inference
-Streamlit — chat interface
-Pandas — sensor log processing
-Pure Python, no cloud services
-How to Run It
-Prerequisites
-Python 3.10+
-Ollama installed
-Setup
-git clone https://github.com/s-sushmitha12/mechanicmind.git
-cd mechanicmind
+---
+
+## The Solution
+
+MechanicMind is a fully offline, edge-deployed AI diagnostic assistant. A technician can ask natural-language questions about a machine fault, and the system reasons through equipment manuals and sensor data entirely on the local device, with zero cloud or internet dependency.
+
+---
+
+## How It Works
+
+- **Local AI Model** – Runs entirely on the device using **Ollama (Phi-3)**. No API calls or internet connection required.
+- **Local Knowledge Base** – Equipment manual excerpts and known fault codes are stored locally as text files.
+- **Local Sensor Log** – Simulated machine telemetry such as temperature, pressure, and vibration is processed locally.
+- **AI Reasoning** – The AI cross-references the technician's query with the equipment manual and recent sensor readings to generate a diagnosis.
+- **Auto Logging** – Every diagnosis is saved locally as a maintenance report for future reference.
+
+---
+
+## Proof of Offline Operation
+
+MechanicMind is designed to operate completely offline. Since the AI model runs locally through Ollama, the application can generate sensor-based diagnostic suggestions without requiring an internet connection.
+
+---
+
+## Tech Stack
+
+- **Python**
+- **Ollama (Phi-3)** – Local Large Language Model (LLM)
+- **Streamlit** – Web-based user interface
+- **Pandas** – Sensor log processing
+- **NumPy** – Numerical computations
+- **Pure Python** – No cloud services or external APIs
+
+---
+
+## How to Run It
+
+### Prerequisites
+
+- Python 3.10 or later
+- Ollama installed
+- Phi-3 model downloaded
+
+### Setup
+
+```bash
+git clone https://github.com/VarshaGB-17/MechanicMind.git
+cd MechanicMind
+
 python -m venv venv
-venv\Scripts\activate      # Windows
+
+# Windows
+venv\Scripts\activate
+
 pip install -r requirements.txt
+
 ollama pull phi3
+ollama serve
+
+streamlit run app.py
+```
+
+---
+
+## Features
+
+- Offline AI-powered diagnostics
+- Heavy machinery troubleshooting
+- Equipment manual analysis
+- Sensor log analysis
+- Natural language interaction
+- Automatic maintenance report generation
+- No internet dependency
+
+---
+
+## Future Enhancements
+
+- Voice-based interaction
+- Camera-based error code scanning
+- PDF equipment manual support
+- Real-time IoT sensor integration
+- Predictive maintenance using AI
+- Multi-language support
+
+---
+
+## Team
+
+**Varsha Bhooti**
+**Sushmitha D S**
+
+
+Information Science and Engineering
+
+Nitte Meenakshi Institute of Technology
+
+---
+
+## License
+
+This project was developed for educational purposes and hackathon participation.
