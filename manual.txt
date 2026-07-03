@@ -1,0 +1,23 @@
+FAULT CODE E204: Hydraulic pressure spike
+Cause: Worn valve seal or blocked filter
+Action: Inspect valve seal, replace if cracked. Check filter for debris.
+
+FAULT CODE E118: Engine overheating
+Cause: Coolant leak or blocked radiator
+Action: Check coolant level, inspect radiator for blockage.
+
+FAULT CODE E301: Vibration anomaly in gearbox
+Cause: Bearing wear or misalignment
+Action: Inspect bearings, check gearbox alignment
+
+FAULT CODE E415: Brake system pressure loss
+Cause: Air in brake lines, worn brake pads, or hydraulic fluid leak
+Action: Bleed brake lines to remove air, inspect pads for wear, check for fluid leaks at calipers and hoses.
+
+FAULT CODE E522: Excessive fuel consumption
+Cause: Clogged air filter, fuel injector malfunction, or tire pressure too low
+Action: Replace air filter, inspect fuel injectors, check and correct tire pressure.
+
+FAULT CODE E610: Low battery/electrical fault
+Cause: Alternator failure, corroded battery terminals, or parasitic drain
+Action: Test alternator output, clean battery terminals, inspect for electrical shorts.
